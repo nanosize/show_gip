@@ -5,7 +5,7 @@ import pyperclip
 
 #window作成
 root = Tk()
-root.title('グローバルIP表示')
+root.title('show-gip')
 root.geometry('300x180')
 
 #タイトル
