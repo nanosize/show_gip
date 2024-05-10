@@ -1,17 +1,14 @@
 from cx_Freeze import setup, Executable
 
-# Dependencies are automatically detected, but it might need
-# fine tuning.
-build_options = {'packages': ['requests'], 'excludes': []}
+# Dependencies are automatically detected, but they might need fine-tuning.
+build_exe_options = {
+    'excludes': ['requests']
+}
 
-base = 'gui'
-
-executables = [
-    Executable('main.py', base=base, target_name = 'Show-Gip',icon= 'icons/gip_icon.ico')
-]
-
-setup(name='Show-Gip',
-      version = '1.0',
+setup(
+    name="Show-Gip",
+    version="0.1",
       description = 'Show your global IP address.',
-      options = {'build_exe': build_options},
-      executables = executables)
+    options={"build_exe": build_exe_options},
+    executables=[Executable("ShowGip.py", base="gui")],
+)
