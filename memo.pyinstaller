@@ -1,0 +1,2 @@
+#exe化
+pyinstaller --noconsole --clean --onefile --icon=gip_icon.ico ShowGip.py

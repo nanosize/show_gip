@@ -12,3 +12,4 @@ setup(
     options={"build_exe": build_exe_options},
     executables=[Executable("ShowGip.py", base="gui")]
 )
+
