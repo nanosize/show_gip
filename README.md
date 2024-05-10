@@ -1,2 +1,1 @@
-# show_gip
-Show your Global Ip.
+MDの正しい使い方。
