@@ -7,6 +7,8 @@ import pyperclip
 root = Tk()
 root.title('show-gip')
 root.geometry('300x180')
+iconfile = 'icons/gip_icon.ico'
+root.iconbitmap(default=iconfile)
 
 #タイトル
 Label = ttk.Label(
