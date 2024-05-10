@@ -9,6 +9,7 @@ name = "Show-Gip"
 version = "0.1"
 description = "自分のグローバルIPを簡単に確認することができます"
 author = "Nanosize"
+license= 'MIT'
 url = "https://netchira.github.io/"
 icon = "icons/gip_icon.ico"
 
@@ -28,7 +29,7 @@ shortcut_table = [
      "CompareTxt",               # Name
      'TARGETDIR',                # Component_
      '[TARGETDIR]CompareTxt.exe',# Target
-     None,                       # Arguments
+     'license',                  # license
      None,                       # Description
      None,                       # Hotkey
      None,                       # Icon
@@ -66,5 +67,5 @@ setup(name=name,
       url=url,
       description=description,
       options=options,
-      executables=[Executable("main.py")]
+      executables=[Executable(script="main.py",icon=icon)]
       )
