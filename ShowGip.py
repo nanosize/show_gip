@@ -41,8 +41,11 @@ Label.pack()
 #gipの取得
 def get_gip():
     global gip
-    gip = requests.get('http://api.ipify.org/') 
-    #print(gip.text)
+    try:
+        gip = requests.get('http://api.ipify.org/')
+        #print(gip.text)
+    except requests.exceptions.RequestException as e:
+        gip = "00"
 get_gip()
 
 #reloadボタンが押された時
