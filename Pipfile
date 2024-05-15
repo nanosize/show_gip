@@ -8,6 +8,7 @@ pyinstaller = "*"
 requests = "*"
 tk = "*"
 pyperclip = "*"
+ping3 = "*"
 
 [dev-packages]
 
