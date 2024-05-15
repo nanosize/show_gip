@@ -9,6 +9,7 @@ requests = "*"
 tk = "*"
 pyperclip = "*"
 ping3 = "*"
+pylance = "*"
 
 [dev-packages]
 
